@@ -1,0 +1,53 @@
+.desk-screen {
+  width: 280px;
+  height: 226px;
+  background-color: #f8f7ec;
+  .large {
+    height: 30px;
+    background-color: #13c251;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+  }
+}
+.dummy-nav {
+  height: 40px;
+  background: #e1e0d3;
+}
+.minimize {
+  width: 15px;
+  height: 15px;
+  background: #b0bec5;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 14px 10px;
+}
+.green {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #13c251;
+  float: right;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+.screen-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+.screen {
+  width: 104px;
+  height: 62px;
+  background-color: #e7e6d8;
+  margin: 10px;
+}
+.dummy-text {
+  width: 104px;
+  height: 10px;
+  background-color: #e7e6d8;
+  margin: 10px;
+  margin-bottom: 16px;
+}

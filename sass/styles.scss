@@ -1,0 +1,210 @@
+@import "skeleton";
+@import "reset";
+@import "utilities";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&family=Source+Sans+Pro:wght@400;600&display=swap");
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+.banner {
+  height: 600px;
+  background-image: linear-gradient(to right, #20cd5d, #11bc4e);
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  img {
+    position: absolute;
+    right: 0;
+    top: 180px;
+  }
+}
+nav {
+  @include flex(space-around);
+  max-width: 1280px;
+  margin: 0 auto;
+  .logo {
+    color: #fff;
+    font-size: 20px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 600;
+    padding: 20px 30px;
+  }
+  ul {
+    @include flex(space-around);
+
+    li {
+      margin: 0 30px;
+      font-size: 14px;
+    }
+    a {
+      color: #fff;
+    }
+  }
+}
+.credential-btn {
+  margin-left: auto;
+  button {
+    color: #fff;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 5px 16px;
+  }
+}
+h1 {
+  font-size: 28px;
+  padding-top: 168px;
+  padding-bottom: 20px;
+}
+label {
+  position: relative;
+  input[type="text"] {
+    width: 510px;
+    height: 48px;
+    padding: 14px 16px;
+  }
+  button {
+    position: absolute;
+    right: 0;
+    background-color: #ff7500;
+    color: #fff;
+    padding: 17px;
+  }
+}
+.try-it {
+  font-size: 14px;
+  padding-top: 8px;
+  a {
+    color: #fff;
+    text-decoration: underline;
+  }
+}
+.about-us {
+  margin-bottom: 130px;
+  h2 {
+    max-width: 560px;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+  }
+  ul {
+    display: flex;
+    justify-content: center;
+  }
+  li {
+    padding: 77px;
+  }
+  h3 {
+    width: 141px;
+    font-size: 17px;
+    font-weight: 600;
+    padding-top: 40px;
+  }
+}
+.hexagon {
+  position: relative;
+  background-color: #576a5f;
+  border-radius: 10px;
+  width: 100px;
+  height: 63px;
+  box-sizing: border-box;
+
+  &:before,
+  &:after {
+    content: "";
+    border: inherit;
+    position: absolute;
+    background-color: #576a5f;
+    border-radius: inherit;
+    height: 63px;
+    width: 100px;
+  }
+  &:before {
+    transform: rotate(60deg);
+  }
+  &:after {
+    transform: rotate(-60deg);
+  }
+}
+.browser-extension {
+  @include flex(space-evenly);
+  padding-bottom: 130px;
+}
+article {
+  border: 1px solid #979797;
+  padding: 32px 28px;
+
+  h2 {
+    color: #333;
+    font-size: 30px;
+    font-weight: 600;
+  }
+  p {
+    width: 330px;
+    color: #999;
+    font-size: 16px;
+    padding-bottom: 24px;
+  }
+  h4 {
+    color: #4c4c4c;
+    font-size: 17px;
+    padding-bottom: 16px;
+  }
+  .fa-circle {
+    width: 10px;
+    height: 10px;
+    color: #13c251;
+  }
+}
+.review {
+  @include flex(center);
+
+  button {
+    @extend %btn;
+  }
+  .rating {
+    padding-top: 16px;
+    .star {
+      color: #ffcb00;
+    }
+    p {
+      font-size: 13px;
+      padding-top: 5px;
+    }
+  }
+}
+.benefits {
+  @include flex(space-evenly);
+  padding-bottom: 200px;
+  button {
+    @extend %btn;
+  }
+  .features {
+    @include flex(space-evenly);
+    p {
+      font-size: 12px;
+      padding-bottom: 0;
+    }
+  }
+}
+.how-it-works {
+  text-align: center;
+  position: relative;
+  h2 {
+    color: #333;
+    font-size: 30px;
+    padding-bottom: 30px;
+    font-weight: 600;
+  }
+  .play {
+    position: absolute;
+    left: 47%;
+    top: 50%;
+  }
+}
+footer {
+  background-image: linear-gradient(to right, #20cd5d, #11bc4e);
+  padding-top: 140px;
+  nav {
+    @include flex(space-between);
+  }
+}
